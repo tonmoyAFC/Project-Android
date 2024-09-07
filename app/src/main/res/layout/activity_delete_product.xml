@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header TextView -->
+    <TextView
+        android:id="@+id/text_view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/to_delete_search_a_product_by_name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Product Name -->
+
+    <!-- Product Price -->
+    <EditText
+        android:id="@+id/text_view_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/product_name2"
+        android:padding="8dp"
+
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_view_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/darker_gray"
+        android:enabled="false"
+        android:hint="@string/product_price2"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:ignore="TextViewEdits" />
+
+    <!-- Product Quantity -->
+    <TextView
+        android:id="@+id/text_view_product_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/darker_gray"
+        android:enabled="false"
+        android:hint="@string/product_quantity2"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:ignore="TextViewEdits" />
+
+    <!-- Product ID -->
+    <TextView
+        android:id="@+id/text_view_product_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/darker_gray"
+        android:enabled="false"
+        android:hint="@string/product_id1"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/image_view_product"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp" />
+
+    <!-- Select Image Button -->
+
+
+    <!-- Horizontal layout for side-by-side buttons -->
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:weightSum="2">
+
+        <!-- Search Button -->
+        <Button
+            android:id="@+id/button_search"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+            android:text="@string/search1" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/button_delete"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_error"
+            android:text="@string/delete_product" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<!-- list_item_product.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/image_view_product"
+        android:layout_width="219dp"
+        android:layout_height="189dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/img_3" />.
+    android:src="@drawable/upload_icon"
+
+
+    <TextView
+        android:id="@+id/text_view_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_view_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text_view_product_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="24sp" />
+
+</LinearLayout>
